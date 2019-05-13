@@ -22,7 +22,7 @@ class TodoListsController < ApplicationController
     @todo_list = current_user.todo_lists.new(todo_list_params)
 
     if @todo_list.save
-      @message = "Todo List Created successfully."
+      @message = "ToDo List saved Successfully.."
       render(
         :show,
         status: :created
